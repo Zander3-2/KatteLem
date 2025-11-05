@@ -1,9 +1,9 @@
 
 public class Catflap {
+    public FlapStatus FlapStatus;
 
-    private FlapStatus flapStatus;
-
-
+    public Catflap(FlapStatus LUKKET){
+        this.FlapStatus = LUKKET;
 }
 
     //getMode() / setMode(Mode mode)
@@ -24,6 +24,5 @@ public class Catflap {
     //canExit(String chipId)
 
 
-
-
     }
+
