@@ -1,35 +1,25 @@
 public class Catflap {
-    public String chipID;
-    public boolean startMode;
-    public boolean isRegistered;
+    public Mode startMode;
 
-    public Catflap (String chipID, boolean startMode, boolean isRegistered) {
-        this.chipID = chipID;
-        this.startMode = startMode;
-        this.isRegistered = isRegistered;
+
+    public Mode FlapStatus;
+    public Catflap(Mode FlapStatus) {
+        this.FlapStatus = LUKKET;
     }
 
-    public boolean getStartMode() {
+
+
+    public Catflap (Mode startMode) {
+        this.startMode = startMode;
+    }
+
+    public Mode getStartMode() {
         return startMode;
     }
 
-    public void setStartMode(boolean startMode) {
+    public void setStartMode(Mode startMode) {
         this.startMode = startMode;
     }
-
-    public boolean getRegisterStatus() {
-        return isRegistered;
-    }
-
-    public void setRegisterStatus(boolean isRegistered) {
-        this.isRegistered = isRegistered;
-    }
-
-    }
-    public FlapStatus FlapStatus;
-
-    public Catflap(FlapStatus LUKKET){
-        this.FlapStatus = LUKKET;
 }
 
     //getMode() / setMode(Mode mode)
@@ -50,5 +40,4 @@ public class Catflap {
     //canExit(String chipId)
 
 
-    }
 

@@ -12,7 +12,6 @@ public class Cat {
 
 
     //getters
-
     public String getChipId() {
         return chipId;
     }
@@ -35,9 +34,7 @@ public class Cat {
     @Override
     public String toString() {
         return "Cat{" +
-                "chipId='" + chipId + '\'' +
-                ", isRegistered=" + isRegistered +
-                '}';
+                "chipId='" + chipId + '\'' + ", isRegistered=" + isRegistered + '}';
     }
 
 }
