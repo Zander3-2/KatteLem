@@ -3,15 +3,12 @@ public class Cat {
     public String chipId;
     public boolean isRegistered;
 
-
-
     public Cat(String chipId, boolean isRegistered) {
         this.chipId = chipId;
-        this.isRegistered = false;
+        this.isRegistered = isRegistered;
     }
 
-
-    //getters
+    // getters
     public String getChipId() {
         return chipId;
     }
@@ -20,8 +17,7 @@ public class Cat {
         return isRegistered;
     }
 
-
-    //setters
+    // setters
     public void setRegistered(boolean registered) {
         isRegistered = registered;
     }
@@ -30,11 +26,8 @@ public class Cat {
         this.chipId = chipId;
     }
 
-
     @Override
     public String toString() {
-        return "Cat{" +
-                "chipId='" + chipId + '\'' + ", isRegistered=" + isRegistered + '}';
+        return "\nchipId = " + chipId + ", (isRegistered = " + isRegistered + ")}";
     }
-
 }
