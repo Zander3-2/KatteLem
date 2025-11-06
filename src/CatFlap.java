@@ -1,12 +1,11 @@
+import java.util.ArrayList;
+
 public class CatFlap {
 
     public Mode flapStatus;
-    public boolean gateOpen;
-
 
     public CatFlap(Mode flapStatus, boolean gateOpen) {
         this.flapStatus = Mode.LUKKET;
-        this.gateOpen = false;
     }
 
 
@@ -15,36 +14,43 @@ public class CatFlap {
         return flapStatus;
     }
 
-    public boolean getGateOpen() {
-        return gateOpen;
-    }
-
-
     //Setters
     public void setFlapStatus(Mode flapStatus) {
         this.flapStatus = flapStatus;
     }
 
-    public void setGateOpen(boolean gateOpen) {
-        this.gateOpen = gateOpen;
-    }
 
     //toString (slet måske??)
 
     @Override
     public String toString() {
-        return "flapStatus: " + flapStatus + "\nGateOpen: " + gateOpen;
+        return "flapStatus: " + flapStatus;
     }
 
-}
 
-//getMode() / setMode(Mode mode)
+
+
+    ArrayList<Cat> allCats = new ArrayList<>();
+
+    //tilføj ny cat
+    public void addNewCat(Cat cat) {
+        allCats.add(Cat);
+    }
 
 
 //registerCat(String chipId)
 
+    public registerExistingCat() {
+        try ((for Cat cat : cats) {
+            if (cat.isRegistered()) {
+                catFlapTestClass.allCats.add(cat);
+            }
+        }
+    }
+
 
 //clearRegisteredCats()
+
 
 
 //isCatRegistered(String chipId)
@@ -56,5 +62,4 @@ public class CatFlap {
 //canExit(String chipId)
 
 
-
-
+}

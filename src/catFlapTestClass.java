@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class catFlapTestClass {
 
     public static void main(String[] args) {
+
         ArrayList<Cat> allCats = new ArrayList<>();
 
         Cat c1 = new Cat("kat1", false);
@@ -14,7 +15,6 @@ public class catFlapTestClass {
         Cat c7 = new Cat("kat7", false);
         Cat c8 = new Cat("kat8", false);
 
-
         allCats.add(c1);
         allCats.add(c2);
         allCats.add(c3);
@@ -24,9 +24,19 @@ public class catFlapTestClass {
         allCats.add(c7);
         allCats.add(c8);
 
+        printAllCats(allCats);
 
-        System.out.println("All cats:");
-        System.out.println(allCats);
+
 
     }
+
+
+    public static void printAllCats(ArrayList<Cat> allCats) {
+        System.out.println("All cats:");
+        for (Cat cat : allCats) {
+            System.out.println(cat);
+        }
+    }
+
+
 }
