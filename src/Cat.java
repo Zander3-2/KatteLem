@@ -1,11 +1,9 @@
 public class Cat {
 
     public String chipId;
-    public boolean isRegistered;
 
-    public Cat(String chipId, boolean isRegistered) {
+    public Cat(String chipId) {
         this.chipId = chipId;
-        this.isRegistered = isRegistered;
     }
 
     // getters
@@ -13,14 +11,6 @@ public class Cat {
         return chipId;
     }
 
-    public boolean getIsRegistered() {
-        return isRegistered;
-    }
-
-    // setters
-    public void setRegistered(boolean registered) {
-        isRegistered = registered;
-    }
 
     public void setChipId(String chipId) {
         this.chipId = chipId;
@@ -28,6 +18,6 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "\nchipId = " + chipId + ", (isRegistered = " + isRegistered + ")}";
+        return "\nchipId = " + chipId + "}";
     }
 }

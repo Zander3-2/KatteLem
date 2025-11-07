@@ -4,7 +4,7 @@ public class CatFlap {
 
     public Mode flapStatus;
 
-    public CatFlap(Mode flapStatus, boolean gateOpen) {
+    public CatFlap(Mode flapStatus) {
         this.flapStatus = Mode.LUKKET;
     }
 
